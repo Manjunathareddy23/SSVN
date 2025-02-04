@@ -16,9 +16,10 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-# Navigation Menu
+# Navigation Menu (as Subheader)
+st.subheader("Navigation")
 menu = ['Home', 'About', 'Academics', 'Gallery', 'Contact']
-choice = st.sidebar.radio("Menu", menu)
+choice = st.selectbox("Choose a section", menu)
 
 # Hero Section (Marquee)
 if choice == 'Home':
